@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <BRIg_sbBestsellers>
+            <version>0.0.1</version>
+        </BRIg_sbBestsellers>
+	</modules>
+	<frontend>
+		<routers>
+			<routeurfrontend>
+				<use>standard</use>
+				<args>
+					<module>BRIg_sbBestsellers</module>
+					<frontName>test</frontName>
+				</args>
+			</routeurfrontend>
+		</routers>
+		<layout>
+			<updates>
+				<test>
+					<file>sbbestsellers.xml</file>
+				</test>
+			</updates>
+		</layout>
+	</frontend>
+	<global>
+		<blocks>
+			<test>
+				<class>BRIg_sbBestsellers_Block</class>
+			</test>
+		</blocks>
+	</global>
+</config>
